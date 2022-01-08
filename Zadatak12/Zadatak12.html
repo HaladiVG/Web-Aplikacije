@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="hr">
+	<head>
+		<title>Zadatak 12</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="Karlo Haladi">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+			body { margin: 1em; }
+			form { width: 300px; }
+		</style>
+    </head>
+    <body>
+        <form action="showuser.php" method="post">
+            <div class="form-group">
+                <label for="fname">First Name *</label><br>
+                <input class="form-control" type="text" id="fname" name=firstname placeholder="Your name" required> 
+            </div>
+            <div class="form-group">
+                <label for="lname">Last Name *</label><br>
+                <input class="form-control" type="text" id="lname" name=lastname placeholder="Your surname" required> 
+            </div>
+            <div class="form-group"> 
+                <label for="email">Email *</label><br>
+                <input class="form-control" type="email" id="email" name=email placeholder="Your email" required> 
+            </div>
+            <div class="form-group">
+                <label for="country">Country</label><br>
+                <select class="form-control" name="country" id="country">
+                    <option value="">Please select your countrty</option>
+                    <option value="Croatia">Croatia</option>
+                    <option value="Serbia">Serbia</option>
+                    <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                    <option value="Slovenia">Slovenia</option>
+                    <option value="Macedonia">Macedonia</option>
+                    <option value="Austria">Austria</option>
+                </select>
+            </div>
+            <div>
+                <label for="note">Note</label><br>
+                <textarea class="form-control" name="note" id="note" cols="30" rows="10" placeholder="Please enter your text"></textarea><br>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn" value="Send">
+                <input type="reset" class="btn" value="Reset">
+            </div>
+        </form>
+    </body>
+
+
+</html>
